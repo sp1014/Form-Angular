@@ -1,0 +1,34 @@
+<div class="container">
+<div class="row">
+  <form [formGroup]="nuevoForm" (ngSubmit)="onNuevo(nuevoForm.value)">
+    <div class="form-group">
+      <label for="Documento">Documento</label>
+      <input type="text" class="form-control" id="Documento" aria-describedby="Documento" placeholder="Enter Documento" formControlName="Documento">
+    </div>
+    <div class="form-group">
+      <label for="Nombres">Nombres</label>
+      <input type="text" class="form-control" id="Nombres" aria-describedby="Nombres" placeholder="Enter Nombres" formControlName="Nombres">
+ 
+    </div>
+    <div class="form-group">
+      <label for="Apellidos">Apellidos</label>
+      <input type="text" class="form-control" id="Apellidos" aria-describedby="Apellidos" placeholder="Enter Apellidos" formControlName="Apellidos">
+  
+    </div>
+    <div class="form-group">
+      <label for="Telefono">Telefono</label>
+      <input type="text" class="form-control" id="Telefono" placeholder="Telefono" formControlName="Telefono">
+    </div>
+    <div class="form-group">
+      <label for="Correo">Correo</label>
+      <input type="text" class="form-control" id="Correo" aria-describedby="Correo" placeholder="Enter Correo" formControlName="Correo">
+    </div>
+    <div class="form-group">
+      <label for="Direccion">Direccion</label>
+      <input type="text" class="form-control" id="Direccion" aria-describedby="Direccion" placeholder="Enter Direccion" formControlName="Direccion">
+  
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+  </form>
+    </div>
+  </div>
